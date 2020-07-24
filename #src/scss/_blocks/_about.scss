@@ -1,21 +1,43 @@
 .about {
   padding-top: 112px;
   padding-bottom: 26px;
+  background-color: $bg-about-color;
+
+  @media (max-width: 659.98px) {
+    padding-top: 106px;
+    padding-bottom: 40px;
+  }
 
   &__row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media (max-width: 659.98px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__col {
     &:first-child {
       width: 40%;
+
+      @media (max-width: 659.98px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+      }
     }
 
     &:last-child {
       width: 60%;
       padding-left: 18px;
+
+      @media (max-width: 659.98px) {
+        width: 100%;
+        padding-left: 0;
+      }
     }
   }
 
@@ -25,5 +47,17 @@
 
   &__title {
     margin-bottom: 12px;
+    font-size: 26px;
+
+    @media (max-width: 659.98px) {
+      text-align: center;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__text {
+    @media (max-width: 659.98px) {
+      font-size: 18px;
+    }
   }
 }
