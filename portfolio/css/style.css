@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-display: swap;
   src: url("../../fonts/Roboto-Black.woff2") format("woff2"), url("../../fonts/Roboto-Black.woff") format("woff");
@@ -293,11 +295,200 @@ body.lock {
   overflow: hidden;
 }
 
+/*stylelint-disable*/
+
+/* Slider */
+
+.slick-slider {
+  -webkit-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  position: relative;
+          box-sizing: border-box;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.slick-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  border: 1px solid transparent;
+  height: auto;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+/* Лента слайдов */
+
+/* Слайд */
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+/* Стрелка вправо */
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  position: absolute;
+  top: 50%;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url("../../../img/svgmin/arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.slick-arrow.slick-prev {
+  -webkit-transform: translateY(-22px) scale(-1, 1);
+      -ms-transform: translateY(-22px) scale(-1, 1);
+  left: 0;
+          transform: translateY(-22px) scale(-1, 1);
+  z-index: 2;
+}
+
+.slick-arrow.slick-next {
+  -webkit-transform: translateY(-22px);
+      -ms-transform: translateY(-22px);
+  right: 0;
+          transform: translateY(-22px);
+}
+
+.slick-arrow.slick-prev.slick-disabled {
+  -webkit-transform: translateY(-22px) scale(1, -1);
+      -ms-transform: translateY(-22px) scale(1, -1);
+          transform: translateY(-22px) scale(1, -1);
+  background-image: url("../../../img/svgmin/arrow-disabled.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.slick-arrow.slick-next.slick-disabled {
+  -webkit-transform: translateY(-22px) scale(-1, 1);
+      -ms-transform: translateY(-22px) scale(-1, 1);
+          transform: translateY(-22px) scale(-1, 1);
+  background-image: url("../../../img/svgmin/arrow-disabled.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .main-header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  z-index: 3;
   background-color: #44413b;
   width: 100%;
 }
@@ -481,7 +672,7 @@ body.lock {
     position: absolute;
     top: 24px;
     left: 15px;
-    z-index: 3;
+    z-index: 4;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -553,7 +744,7 @@ body.lock {
   .main-header.active::before {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
-    z-index: 3;
+    z-index: 4;
     transition: all 0.3s ease 0s;
     background-color: #44413b;
   }
@@ -609,6 +800,11 @@ body.lock {
   .navigation__link:focus {
     color: #ffffff;
   }
+
+  .logo {
+    position: relative;
+    z-index: 4;
+  }
 }
 
 @media (max-width: 659.98px) {
@@ -653,7 +849,9 @@ body.lock {
   }
 }
 @supports (-webkit-appearance:none){
-
+.slick-arrow.slick-prev,.slick-arrow.slick-next{background-image:url("../../../img/svgmin/arrow.svg")}
+.slick-arrow.slick-prev.slick-disabled{background-image:url("../../../img/svgmin/arrow-disabled.svg")}
+.slick-arrow.slick-next.slick-disabled{background-image:url("../../../img/svgmin/arrow-disabled.svg")}
 }
 
  @media (max-width: 839.98px){

@@ -5,9 +5,10 @@ $(document).ready(function () {
   /*burger & navigation*/
   $('.main-header__burger').click(function (event) {
     event.preventDefault();
-    $('.main-header__burger,.main-header__navigation').toggleClass('active');
+    $('.main-header__burger,.main-header,.main-header__navigation').toggleClass('active');
     $('body').toggleClass('lock');
   });
+  /*scroll to*/
   $('.navigation__link').click(function () {
     $('.main-header__burger,.main-header__navigation').toggleClass('active');
     $('body').toggleClass('lock');
@@ -17,6 +18,39 @@ $(document).ready(function () {
       $('html, body').animate({ scrollTop: destination - 79 }, 800);
     }
     return false;
+  });
+  /*slick-slider */
+  $('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1140,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 });
 

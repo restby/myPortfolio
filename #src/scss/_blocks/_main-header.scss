@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   background-color: $bg-header-color;
+  z-index: 3;
 
   &__row {
     display: flex;
@@ -25,7 +26,7 @@
       display: block;
       width: 30px;
       height: 20px;
-      z-index: 3;
+      z-index: 4;
       background-color: transparent;
       position: absolute;
       top: 24px;
@@ -101,7 +102,7 @@
     @media (max-width: $md3+px) {
       transition: all 0.3s ease 0s;
       background-color: $bg-header-color;
-      z-index: 3;
+      z-index: 4;
     }
   }
 }
