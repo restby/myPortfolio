@@ -1,0 +1,29 @@
+.about {
+  padding-top: 112px;
+  padding-bottom: 26px;
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__col {
+    &:first-child {
+      width: 40%;
+    }
+
+    &:last-child {
+      width: 60%;
+      padding-left: 18px;
+    }
+  }
+
+  // &__img {
+
+  // }
+
+  &__title {
+    margin-bottom: 12px;
+  }
+}

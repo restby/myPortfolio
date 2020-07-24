@@ -1,0 +1,6 @@
+.logo {
+  @media (max-width: $md3+px) {
+    position: relative;
+    z-index: 4;
+  }
+}

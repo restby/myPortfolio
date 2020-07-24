@@ -1,6 +1,22 @@
 .main-header {
-  position: relative;
-  border-bottom: 1px solid #d4d4d4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $bg-header-color;
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media (max-width: $md3+px) {
+      justify-content: center;
+    }
+  }
 
   &__burger {
     display: none;
@@ -12,14 +28,19 @@
       z-index: 3;
       background-color: transparent;
       position: absolute;
-      top: 27px;
+      top: 24px;
       left: 15px;
       border: none;
       padding: 0;
       cursor: pointer;
 
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+
       & span {
-        background-color: $active-color;
+        background-color: $link-color;
         position: absolute;
         left: 0;
         width: 100%;
@@ -31,7 +52,7 @@
       &::before,
       &::after {
         content: "";
-        background-color: $active-color;
+        background-color: $link-color;
         position: absolute;
         width: 100%;
         height: 2px;
@@ -62,6 +83,25 @@
         bottom: 9px;
         background-color: $white-color;
       }
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 79px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: -1;
+  }
+
+  &.active::before {
+    @media (max-width: $md3+px) {
+      transition: all 0.3s ease 0s;
+      background-color: $bg-header-color;
+      z-index: 3;
     }
   }
 }
