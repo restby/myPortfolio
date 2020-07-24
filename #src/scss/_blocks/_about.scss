@@ -1,11 +1,10 @@
 .about {
-  padding-top: 112px;
-  padding-bottom: 26px;
+  padding-top: 126px;
+  padding-bottom: 46px;
   background-color: $bg-about-color;
 
   @media (max-width: 659.98px) {
     padding-top: 106px;
-    padding-bottom: 40px;
   }
 
   &__row {

@@ -367,8 +367,8 @@ body.lock {
 
 .about {
   background-color: #d9ccc1;
-  padding-top: 112px;
-  padding-bottom: 26px;
+  padding-top: 126px;
+  padding-bottom: 46px;
 }
 
 .about__row {
@@ -397,6 +397,71 @@ body.lock {
   font-size: 26px;
 }
 
+.skills {
+  background-color: #ad9a8e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.skills__row {
+  -ms-flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      flex-wrap: wrap;
+          justify-content: center;
+}
+
+.skills__title {
+  margin-bottom: 6px;
+  color: #000000;
+  text-align: center;
+}
+
+.skills__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  margin-top: 22px;
+}
+
+.skills__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          flex-direction: column;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+
+.skills__item {
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.work-slider {
+  background-color: #d9ccc1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.work-slider__title {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
 @media (max-width: 839.98px) {
   .navigation__list li {
     margin-right: 10px;
@@ -404,7 +469,7 @@ body.lock {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 729.98px) {
   .main-header__row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -544,17 +609,11 @@ body.lock {
   .navigation__link:focus {
     color: #ffffff;
   }
-
-  .logo {
-    position: relative;
-    z-index: 4;
-  }
 }
 
 @media (max-width: 659.98px) {
   .about {
     padding-top: 106px;
-    padding-bottom: 40px;
   }
 
   .about__row {
@@ -586,6 +645,12 @@ body.lock {
   .about__text {
     font-size: 18px;
   }
+
+  .skills__col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
 }
 @supports (-webkit-appearance:none){
 
@@ -599,7 +664,7 @@ body.lock {
 
 }
 
- @media (max-width: 767.98px){
+ @media (max-width: 729.98px){
 
 @supports (-webkit-appearance:none){
 
