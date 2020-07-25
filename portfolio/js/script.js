@@ -33,7 +33,7 @@ $(document).ready(function () {
     let scroll_el = $(this).attr('href');
     let destination = $(scroll_el).offset().top;
     if ($(scroll_el).length != 0) {
-      $('html, body').animate({ scrollTop: destination - 79 }, 800);
+      $('html, body').animate({ scrollTop: destination - 59 }, 800);
     }
     return false;
   });

@@ -1,10 +1,10 @@
 .about {
-  padding-top: 126px;
+  padding-top: 100px;
   padding-bottom: 46px;
   background-color: $bg-about-color;
 
   @media (max-width: 659.98px) {
-    padding-top: 106px;
+    padding-top: 80px;
   }
 
   &__row {
@@ -20,10 +20,11 @@
   &__col {
     &:first-child {
       width: 40%;
+      display: flex;
+      justify-content: flex-end;
 
       @media (max-width: 659.98px) {
         width: 100%;
-        display: flex;
         justify-content: center;
         margin-bottom: 36px;
       }
@@ -31,7 +32,7 @@
 
     &:last-child {
       width: 60%;
-      padding-left: 18px;
+      padding-left: 40px;
 
       @media (max-width: 659.98px) {
         width: 100%;
@@ -40,13 +41,14 @@
     }
   }
 
-  // &__img {
-
-  // }
+  &__img {
+    width: 320px;
+    height: 480px;
+  }
 
   &__title {
     margin-bottom: 12px;
-    font-size: 26px;
+    text-align: left;
 
     @media (max-width: 659.98px) {
       text-align: center;
