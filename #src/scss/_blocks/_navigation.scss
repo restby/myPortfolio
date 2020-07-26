@@ -24,9 +24,14 @@
 
     &:hover,
     &:focus {
-      color: $active-color;
+      color: $white-color;
       transition: all 0.3s ease 0s;
       outline: none;
+    }
+
+    &:active {
+      transition: all 0.3s ease 0s;
+      color: $active-color;
     }
   }
 }

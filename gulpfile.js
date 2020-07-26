@@ -71,9 +71,7 @@ gulp.task("svg", function () {
   return src([source_folder + "/img/svg/icon-*.svg"])
     .pipe(
       imagemin([
-        imagemin.svgo({
-          plugins: [{ removeViewBox: true } /** */],
-        }),
+        imagemin.svgo(),
       ])
     )
     .pipe(dest([source_folder + "/img/svg/icon-svgmin/"]))

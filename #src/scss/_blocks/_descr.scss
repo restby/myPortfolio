@@ -114,5 +114,10 @@
       color: $white-color;
       text-decoration: none;
     }
+
+    &:active {
+      transition: all 0.3s ease 0s;
+      color: $link-color;
+    }
   }
 }

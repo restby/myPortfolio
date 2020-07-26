@@ -1,0 +1,68 @@
+.social {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: $bg-social-color;
+
+  &__title {
+    margin-bottom: 44px;
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 24px;
+
+    @media (min-width: 481.98px) and (max-width: 569.98px) {
+      margin-right: 12px;
+      margin-left: 12px;
+    }
+
+    @media (min-width: 479.98px) and (max-width: 481.98px) {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      width: 20px;
+      height: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      transition: all 0.4s ease 0s;
+      background-color: $bg-slider-color;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      transition: all 0.3s ease 0s;
+      fill: $text-color;
+    }
+
+    &:active svg {
+      transition: all 0.3s ease 0s;
+      fill: $link-color;
+    }
+  }
+}
