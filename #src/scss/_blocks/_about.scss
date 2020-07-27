@@ -49,6 +49,22 @@
   &__title {
     margin-bottom: 12px;
     text-align: left;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-28px);
+    }
+
+    & span {
+      margin-left: 64px;
+
+      @media (max-width: 659.98px) {
+        margin-left: 0;
+      }
+    }
 
     @media (max-width: 659.98px) {
       text-align: center;

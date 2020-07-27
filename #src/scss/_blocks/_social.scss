@@ -5,6 +5,17 @@
 
   &__title {
     margin-bottom: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 569.98px) {
+      flex-wrap: wrap;
+    }
+
+    & span {
+      margin-left: 20px;
+    }
   }
 
   &__list {
