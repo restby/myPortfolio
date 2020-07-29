@@ -16,7 +16,7 @@
   }
 
   &__btn {
-    flex: 0 1 120px;
+    flex: 0 1 140px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 6px;
@@ -62,7 +62,7 @@
       color: $link-color;
     }
 
-    @media (max-width: 791.98px) {
+    @media (max-width: 809.98px) {
       flex: 0 1 33.333%;
       margin-left: 0;
       margin-right: 0;

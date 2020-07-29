@@ -689,18 +689,20 @@ body.lock {
 .about__col:first-child {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 320px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
           flex: 0 0 320px;
-          justify-content: flex-start;
+          justify-content: flex-end;
 }
 
 .about__col:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   padding-left: 40px;
-  width: 60%;
 }
 
 .about__title {
@@ -852,8 +854,8 @@ body.lock {
 
 .tabs__btn {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 120px;
-          flex: 0 1 120px;
+      -ms-flex: 0 1 140px;
+          flex: 0 1 140px;
   margin-right: 4px;
   margin-left: 4px;
   border: 2px solid #44413b;
@@ -4808,14 +4810,7 @@ body.lock {
   }
 }
 
-@media (max-width: 799.98px) {
-  .tabs__navigation {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 791.98px) {
+@media (max-width: 809.98px) {
   .tabs__btn {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.333%;
@@ -4823,6 +4818,13 @@ body.lock {
     margin-right: 0;
     margin-bottom: 14px;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 799.98px) {
+  .tabs__navigation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -4998,7 +5000,6 @@ body.lock {
 
   .about__col:last-child {
     padding-left: 0;
-    width: 100%;
   }
 
   .about__title span {
@@ -5115,7 +5116,7 @@ body.lock {
   }
 }
 
-@media (max-width: 359.98px) {
+@media (max-width: 389.98px) {
   .skills__row {
     width: 100%;
   }
@@ -5166,7 +5167,7 @@ body.lock {
 
 }
 
- @media (max-width: 799.98px){
+ @media (max-width: 809.98px){
 
 @supports (-webkit-appearance:none){
 
@@ -5174,7 +5175,7 @@ body.lock {
 
 }
 
- @media (max-width: 791.98px){
+ @media (max-width: 799.98px){
 
 @supports (-webkit-appearance:none){
 
@@ -5238,7 +5239,7 @@ body.lock {
 
 }
 
- @media (max-width: 359.98px){
+ @media (max-width: 389.98px){
 
 @supports (-webkit-appearance:none){
 
