@@ -3,6 +3,11 @@
   padding-bottom: 60px;
   background-color: $bg-social-color;
 
+  @media (max-width: 569.98px) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
   &__title {
     margin-bottom: 44px;
     display: flex;
@@ -53,6 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 10px 10px 10px 0 rgba($text-color, 0.6);
 
     & svg {
       width: 20px;
@@ -62,7 +68,13 @@
     &:hover,
     &:focus {
       transition: all 0.4s ease 0s;
-      background-color: $bg-slider-color;
+      box-shadow: 8px 8px 8px 0 rgba($text-color, 0.9);
+      background-color: rgba($white-color, 0.5);
+    }
+
+    &:active {
+      transition: all 0.1s ease 0s;
+      box-shadow: 6px 6px 6px 0 rgba($text-color, 0.7);
     }
 
     &:hover svg,

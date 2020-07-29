@@ -3,6 +3,10 @@
   padding-bottom: 46px;
   background-color: $bg-desc-color;
 
+  @media (max-width: 569.98px) {
+    padding-bottom: 0;
+  }
+
   &__title {
     display: flex;
     align-items: center;

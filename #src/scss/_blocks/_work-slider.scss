@@ -5,7 +5,6 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,8 +19,8 @@
   }
 
   &__wrapper {
-    padding-left: 62px;
-    padding-right: 62px;
+    padding-left: 56px;
+    padding-right: 56px;
 
     @media (max-width: 839.98px) {
       padding-left: 48px;

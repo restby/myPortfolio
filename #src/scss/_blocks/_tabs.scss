@@ -8,10 +8,11 @@
     align-items: flex-start;
     justify-content: center;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 
     @media (max-width: 799.98px) {
       flex-wrap: wrap;
+      padding-bottom: 20px;
     }
   }
 
@@ -19,18 +20,19 @@
     flex: 0 1 140px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: 4px;
     margin-right: 4px;
-    background-color: $bg-skills-color;
-    color: $text-color;
-    font-weight: 700;
+    background-color: $text-color;
+    color: $link-color;
+    font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    border: 2px solid $text-color;
+    border: none;
     border-radius: 6px;
+    box-shadow: 10px 10px 10px 2px rgba($text-color, 0.7);
 
     &:first-child {
       margin-left: 0;
@@ -42,24 +44,32 @@
 
     &:focus,
     &:hover {
-      border: 2px solid $link-color;
-      background-color: $white-color;
-      color: $link-color;
+      color: $text-color;
+      background-color: rgba($white-color, 0.5);
+      box-shadow: 8px 8px 8px 2px rgba($text-color, 0.9);
       transition: all 0.3s ease 0s;
       outline: none;
     }
 
     &:active {
-      border: 2px solid $active-color;
-      background-color: $white-color;
-      color: $active-color;
-      transition: all 0.3s ease 0s;
+      color: rgba($text-color, 0.8);
+      background-color: rgba($white-color, 0.3);
+      box-shadow: 6px 6px 6px 2px rgba($text-color, 0.9);
+      transition: all 0.1s ease 0s;
     }
 
     &.active {
-      border: 2px solid $link-color;
-      background-color: $white-color;
-      color: $link-color;
+      color: rgba($text-color, 0.8);
+      background-color: rgba($white-color, 0.3);
+      box-shadow: 6px 6px 6px 2px rgba($text-color, 0.9);
+      transition: all 0.1s ease 0s;
+    }
+
+    &--active {
+      color: rgba($text-color, 0.8);
+      background-color: rgba($white-color, 0.3);
+      box-shadow: 6px 6px 6px 2px rgba($text-color, 0.9);
+      transition: all 0.1s ease 0s;
     }
 
     @media (max-width: 809.98px) {
@@ -72,12 +82,6 @@
     @media (max-width: 399.98px) {
       flex: 0 1 50%;
     }
-
-    &--active {
-      border: 2px solid $link-color;
-      background-color: $white-color;
-      color: $link-color;
-    }
   }
 
   &__content {
@@ -85,9 +89,8 @@
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 38px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid $text-color;
+    padding-top: 20px;
+    padding-bottom: 38px;
 
     &--active {
       display: flex;
@@ -127,19 +130,6 @@
       }
     }
 
-    // @keyframes bounceOutRight {
-    //   20% {
-    //     opacity: 1;
-    //     transform: translate3d(-20px, 0, 0);
-    //   }
-
-    //   to {
-    //     opacity: 0;
-    //     transform: translate3d(2000px, 0, 0);
-    //   }
-    // }
-
-
     @media (max-width: 569.98px) {
       flex-direction: column;
     }
@@ -152,7 +142,7 @@
 
     @media (max-width: 569.98px) {
       justify-content: center;
-      margin-bottom: 22px;
+      margin-bottom: 32px;
     }
   }
 
@@ -165,6 +155,54 @@
 
     @media (max-width: $md3+px) {
       padding-left: 0;
+    }
+  }
+
+  &__item-link {
+    @media (min-width: 991.98px) {
+      position: relative;
+      transform: translateY(0);
+      transition: transform 0.5s;
+      box-shadow: 10px 10px 10px 0 rgba($text-color, 0.7);
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        height: 8px;
+        width: 100%;
+        box-shadow: 0 0 15px 0 rgba($black-color, 0.6);
+        border-radius: 50%;
+        background-color: rgba($black-color, 0.6);
+        transform: translate(-50%, 0);
+        transition: transform 0.5s;
+      }
+
+      &:focus,
+      &:hover {
+        transform: translateY(-28px);
+        transition: all 0.5s ease 0s;
+        outline: none;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        transform: translate(-50%, 30px) scale(0.75);
+        transition: transform 0.5s;
+      }
+
+      &:active {
+        transition: all 0.1s ease 0s;
+        box-shadow: 5px 5px 5px 0 rgba($text-color, 0.9);
+      }
+
+      &:active::after {
+        transition: all 0.1s ease 0s;
+        box-shadow: 0 0 11px 0 rgba($black-color, 0.5);
+        background-color: rgba($black-color, 0.5);
+      }
     }
   }
 
