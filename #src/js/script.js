@@ -15,7 +15,7 @@ $(document).ready(function () {
     let scroll_el = $(this).attr('href');
     let destination = $(scroll_el).offset().top;
     if ($(scroll_el).length != 0) {
-      $('html, body').animate({ scrollTop: destination - 59 }, 800);
+      $('html, body').animate({ scrollTop: destination - 66 }, 800);
     }
     return false;
   });
@@ -24,30 +24,34 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1140,
+        breakpoint: 1169.98,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 839.98,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 479.98,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
         }
       }
     ]
