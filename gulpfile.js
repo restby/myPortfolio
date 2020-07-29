@@ -7,7 +7,7 @@ let path = {
     css: project_folder + "/css/",
     js: project_folder + "/js/",
     img: project_folder + "/img/",
-    fonts: project_folder + "/fonts/",
+    fonts: project_folder + "/fonts/"
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -15,18 +15,17 @@ let path = {
     js: source_folder + "/js/script.js",
     img: [
       source_folder + "/img/**/*.{jpg,png,gif,svg,ico,webp}",
-      "!" + source_folder + "/img/svg/icon-svgmin/*.svg",
-      "!" + source_folder + "/img/svg/icon-*.svg",
+      "!" + source_folder + "/img/svg/icon-svgmin/*.svg"
     ],
-    fonts: source_folder + "/fonts/*.ttf",
+    fonts: source_folder + "/fonts/*.ttf"
   },
   watch: {
     html: source_folder + "/**/*.html",
     css: source_folder + "/scss/**/*.scss",
     js: source_folder + "/js/**/*.js",
-    img: source_folder + "/img/**/*.{jpg,png,gif,svg,ico,webp}",
+    img: source_folder + "/img/**/*.{jpg,png,gif,svg,ico,webp}"
   },
-  clean: "./" + project_folder + "/",
+  clean: "./" + project_folder + "/"
 };
 let { src, dest } = require("gulp"),
   gulp = require("gulp"),

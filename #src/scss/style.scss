@@ -5,15 +5,9 @@
 @import "_global/visually-hidden";
 @import "_global/container";
 @import "_global/global";
-// @import "libs/bootstrap/_bootstrap-grid";
-// @import "libs/bootstrap/_bootstrap";
-// @import "libs/bootstrap/bootstrap-reboot";
-// @import "libs/owlcarousel/_owl.carousel";
-// @import "libs/owlcarousel/_owl.theme.default";
-// @import "libs/owlcarousel/_resetOwlCarousel";
+@import "libs/animate/animate";
 @import "libs/slick/_slick";
 @import "libs/slick/_resetSlick";
-// @import "libs/twentytwenty/_twentytwenty";
 @import "_blocks/main-header";
 @import "_blocks/navigation";
 @import "_blocks/logo";
@@ -24,5 +18,3 @@
 @import "_blocks/descr";
 @import "_blocks/social";
 @import "_blocks/main-footer";
-// @import "_blocks/popup";
-@import "libs/animate/animate";
