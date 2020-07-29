@@ -22,5 +22,15 @@
   &__wrapper {
     padding-left: 62px;
     padding-right: 62px;
+
+    @media (max-width: 839.98px) {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+
+  &__item {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

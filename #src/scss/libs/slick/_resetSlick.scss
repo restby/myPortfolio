@@ -100,6 +100,20 @@
       background-color: $active-color;
     }
   }
+
+  @media (max-width: 839.98px) {
+    width: 36px;
+    height: 36px;
+
+    &::before {
+      width: 20px;
+      height: 2px;
+    }
+
+    &::after {
+      width: 6px;
+    }
+  }
 }
 
 .slick-arrow.slick-prev {
@@ -122,6 +136,12 @@
     border-right: 18px solid $active-color;
     transition: all 0.2s ease 0s;
   }
+
+  @media (max-width: 839.98px) {
+    &::after {
+      border-right: 12px solid $link-color;
+    }
+  }
 }
 
 .slick-arrow.slick-next {
@@ -143,6 +163,12 @@
   &:active::after {
     border-left: 18px solid $active-color;
     transition: all 0.2s ease 0s;
+  }
+
+  @media (max-width: 839.98px) {
+    &::after {
+      border-left: 12px solid $link-color;
+    }
   }
 }
 
