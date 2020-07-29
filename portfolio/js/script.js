@@ -611,6 +611,10 @@ $(document).ready(function () {
       }
     ]
   });
+  /*spoilers */
+  $('.spoilers__title').click(function (event) {
+    $(this).toggleClass('active').next().slideToggle(400);;
+  });
 });
 /*tabs */
 let $tabs = function (target) {

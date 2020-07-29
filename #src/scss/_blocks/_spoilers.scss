@@ -1,0 +1,141 @@
+.spoilers {
+  background-color: $bg-spoilers-color;
+  padding-top: 30px;
+  padding-bottom: 70px;
+
+  @media (max-width: 659.98px) {
+    padding-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 34px;
+    background-color: transparent;
+    border: none;
+
+    & span {
+      padding-left: 38px;
+      position: relative;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 2px;
+        background-color: $text-color;
+        top: 20px;
+      }
+
+      &::before {
+        transform: rotate(40deg);
+        left: 0;
+      }
+
+      &::after {
+        transform: rotate(-40deg);
+        left: 10px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      transition: all 0.3s ease 0s;
+      color: $link-color;
+    }
+
+    &:active {
+      transition: all 0.3s ease 0s;
+      color: $white-color;
+    }
+
+    &:hover span::before,
+    &:hover span::after,
+    &:focus span::before,
+    &:focus span::after {
+      transition: all 0.3s ease 0s;
+      background-color: $white-color;
+    }
+
+    &:active span::before,
+    &:active span::after {
+      transition: all 0.1s ease 0s;
+      background-color: $link-color;
+    }
+
+    &.active span::before {
+      transform: rotate(-40deg);
+    }
+
+    &.active span::after {
+      transform: rotate(40deg);
+    }
+  }
+
+  &__body {
+    display: none;
+    width: 100%;
+  }
+
+  &__list {
+    @include list-reset;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: 879.98px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (max-width: 709.98px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: 659.98px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    @media (max-width: 659.98px) {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+      transition: all 0.3s ease 0s;
+      outline: none;
+    }
+
+    &:active {
+      transition: all 0.3s ease 0s;
+      color: $white-color;
+    }
+
+    @media (max-width: 659.98px) {
+      text-transform: uppercase;
+    }
+  }
+}

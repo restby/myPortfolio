@@ -147,7 +147,7 @@
         <div class="main-header__row">
           <div class="main-header__col">
             <div class="main-header__logo logo">
-              <a class="logo__link">
+              <a class="logo__link" aria-label="Антон Толстенко">
                 <img class="logo__img" src="img/logo.png" alt="Антон Толстенко">
               </a>
               <!-- /.logo__link -->
@@ -159,19 +159,24 @@
             <nav class="main-header__navigation navigation">
               <ul class="navigation__list">
                 <li>
-                  <a class="navigation__link" href="#about">Обо мне</a>
+                  <a class="navigation__link" href="#about" aria-label="перейти к пункту с информацией обо мне">Обо
+                    мне</a>
                 </li>
                 <li>
-                  <a class="navigation__link" href="#skills">Умения</a>
+                  <a class="navigation__link" href="#skills"
+                    aria-label="перейти к пункту с информацией о моих знаниях и умениях">Умения</a>
                 </li>
                 <li>
-                  <a class="navigation__link" href="#work-slider">Портфолио</a>
+                  <a class="navigation__link" href="#work-slider"
+                    aria-label="перейти к пункту портфолио моих работ">Портфолио</a>
                 </li>
                 <li>
-                  <a class="navigation__link" href="#descr">О проектах</a>
+                  <a class="navigation__link" href="#descr"
+                    aria-label="перейти к пункту с информацией оработах указаных в портфолио">О проектах</a>
                 </li>
                 <li>
-                  <a class="navigation__link" href="#social">Контакты</a>
+                  <a class="navigation__link" href="#social"
+                    aria-label="перейти к пункту с контактами со мной">Контакты</a>
                 </li>
               </ul>
               <!-- /.navigation__list -->
@@ -203,7 +208,7 @@
                   width="50px" height="80px" fill="#fd9334">
                   <use xlink:href="#icon-about"></use>
                 </svg>
-                <span>Обо мне:</span>
+                <span>Обо мне</span>
               </h2>
               <!-- /.about__title section-title -->
               <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat eveniet ab,
@@ -230,7 +235,7 @@
               height="80px" fill="#44413b">
               <use xlink:href="#icon-skills"></use>
             </svg>
-            <span class="wow zoomInUp">Технологии, которыми я владею:</span>
+            <span class="wow zoomInUp">Технологии, которыми я владею</span>
           </h2>
           <!-- /.skills__title section-title -->
           <div class="skills__row">
@@ -328,38 +333,38 @@
           <!-- /.work-slider__title section-title -->
           <div class="work-slider__wrapper slider">
             <div class="work-slider__item">
-              <a class="work-slider__link" href="">
-                <img class="work-slider__img" src="img/item-1.png" alt="">
+              <a class="work-slider__link" href="#" aria-label="перейти на сайт с проектом ...">
+                <img class="work-slider__img" src="img/item-1.png" alt="проект ...">
               </a>
             </div>
             <!-- /.work-slider__item -->
             <div class="work-slider__item">
-              <a class="work-slider__link" href="">
-                <img class="work-slider__img" src="img/item-1.png" alt="">
+              <a class="work-slider__link" href="#" aria-label="перейти на сайт с проектом ...">
+                <img class="work-slider__img" src="img/item-1.png" alt="проект ...">
               </a>
             </div>
             <!-- /.work-slider__item -->
             <div class="work-slider__item">
-              <a class="work-slider__link" href="">
-                <img class="work-slider__img" src="img/item-1.png" alt="">
+              <a class="work-slider__link" href="#" aria-label="перейти на сайт с проектом ...">
+                <img class="work-slider__img" src="img/item-1.png" alt="проект ...">
               </a>
             </div>
             <!-- /.work-slider__item -->
             <div class="work-slider__item">
-              <a class="work-slider__link" href="">
-                <img class="work-slider__img" src="img/item-1.png" alt="">
+              <a class="work-slider__link" href="#" aria-label="перейти на сайт с проектом ...">
+                <img class="work-slider__img" src="img/item-1.png" alt="проект ...">
               </a>
             </div>
             <!-- /.work-slider__item -->
             <div class="work-slider__item">
-              <a class="work-slider__link" href="">
-                <img class="work-slider__img" src="img/item-1.png" alt="">
+              <a class="work-slider__link" href="#" aria-label="перейти на сайт с проектом ...">
+                <img class="work-slider__img" src="img/item-1.png" alt="проект ...">
               </a>
             </div>
             <!-- /.work-slider__item -->
             <div class="work-slider__item">
-              <a class="work-slider__link" href="">
-                <img class="work-slider__img" src="img/item-1.png" alt="">
+              <a class="work-slider__link" href="#" aria-label="перейти на сайт с проектом ...">
+                <img class="work-slider__img" src="img/item-1.png" alt="проект ...">
               </a>
             </div>
             <!-- /.work-slider__item -->
@@ -367,9 +372,61 @@
           <!-- /.work-slider__wrapper.slider -->
         </div>
         <!-- /.container -->
-
       </section>
       <!-- /.work-slider -->
+
+      <section class="spoilers">
+        <div class="container">
+          <div class="spoilers__wrapper">
+            <div class="spoilers__block">
+              <h2 class="visually-hidden"><span></span>Другие мои работы</h2>
+              <button class="spoilers__title section-title wow zoomInUp" type="button"
+                aria-label="раскрыть список ссылок на другие проекты"><span></span>Список других моих работ</button>
+              <!-- /.spoilers__title section-title -->
+              <div class=" spoilers__body">
+                <ul class="spoilers__list">
+                  <li class="spoilers__item">
+                    <a href="#" class="spoilers__link">Проект №7</a>
+                    <!-- /.spoilers__link -->
+                  </li>
+                  <!-- /.spoilers__item -->
+                  <li class="spoilers__item">
+                    <a href="#" class="spoilers__link">Проект №8</a>
+                    <!-- /.spoilers__link -->
+                  </li>
+                  <!-- /.spoilers__item -->
+                  <li class="spoilers__item">
+                    <a href="#" class="spoilers__link">Проект №9</a>
+                    <!-- /.spoilers__link -->
+                  </li>
+                  <!-- /.spoilers__item -->
+                  <li class="spoilers__item">
+                    <a href="#" class="spoilers__link">Проект №10</a>
+                    <!-- /.spoilers__link -->
+                  </li>
+                  <!-- /.spoilers__item -->
+                  <li class="spoilers__item">
+                    <a href="#" class="spoilers__link">Проект №11</a>
+                    <!-- /.spoilers__link -->
+                  </li>
+                  <!-- /.spoilers__item -->
+                  <li class="spoilers__item">
+                    <a href="#" class="spoilers__link">Проект №12</a>
+                    <!-- /.spoilers__link -->
+                  </li>
+                  <!-- /.spoilers__item -->
+                </ul>
+                <!-- /.spoilers__list -->
+              </div>
+              <!-- /.spoilers__body -->
+            </div>
+            <!-- /.spoilers__block -->
+          </div>
+          <!-- /.spoilers__wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.spoilers -->
 
       <section class="descr" id="descr">
         <div class="container">
@@ -378,38 +435,38 @@
               height="80px" fill="#44413b">
               <use xlink:href="#icon-info"></use>
             </svg>
-            <span class="wow zoomInUp">Описание работ:</span>
+            <span class="wow zoomInUp">Описание работ</span>
           </h2>
           <!-- /.descr__title section-title -->
           <div class="descr__wrapper tabs">
             <nav class="tabs__navigation">
               <a class="tabs__btn tabs__btn--active wow fadeInUp " data-wow-delay="0.5s" data-wow-duration="1s"
-                data-wow-offset="100" href="#tab_01">Проект:
+                data-wow-offset="100" href="#tab_01" aria-label="открыть описание проекта ...">Проект:
                 1</a>
               <a class="tabs__btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="100"
-                href="#tab_02">Проект:
+                href="#tab_02" aria-label="открыть описание проекта ...">Проект:
                 2</a>
               <a class="tabs__btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="100"
-                href="#tab_03">Проект:
+                href="#tab_03" aria-label="открыть описание проекта ...">Проект:
                 3</a>
               <a class="tabs__btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="100"
-                href="#tab_04">Проект:
+                href="#tab_04" aria-label="открыть описание проекта ...">Проект:
                 4</a>
               <a class="tabs__btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="100"
-                href="#tab_05">Проект:
+                href="#tab_05" aria-label="открыть описание проекта ...">Проект:
                 5</a>
               <a class="tabs__btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="100"
-                href="#tab_06">Проект:
+                href="#tab_06" aria-label="открыть описание проекта ...">Проект:
                 6</a>
             </nav>
             <!-- /.tabs__navigation -->
             <div class="tabs__body">
               <div class="tabs__content tabs__content--active" id="tab_01">
                 <div class="tabs__col">
-                  <a class="tabs__item-link" href="">
+                  <a class="tabs__item-link" href="#" aria-label="перейти на сайт с проектом">
                     <picture>
                       <source srcset="img/item-1.webp" type="image/webp">
-                      <img class="tabs__item-img" src="img/item-1.png" alt="">
+                      <img class="tabs__item-img" src="img/item-1.png" alt="проект ...">
                     </picture>
                   </a>
                 </div>
@@ -440,8 +497,8 @@
                   </div>
                   <!-- /.tabs__top -->
                   <div class="tabs__bottom">
-                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href=""
-                        class="tabs__code-link">ссылке</a></p>
+                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href="#"
+                        class="tabs__code-link" aria-label="перейти на Github с репозиторием проекта">ссылке</a></p>
                     <!-- /.tabs__text -->
                   </div>
                   <!-- /.tabs__bottom -->
@@ -451,10 +508,10 @@
               <!-- /.tabs__content -->
               <div class="tabs__content" id="tab_02">
                 <div class="tabs__col">
-                  <a class="tabs__item-link" href="">
+                  <a class="tabs__item-link" href="#" aria-label="перейти на сайт с проектом">
                     <picture>
                       <source srcset="img/item-1.webp" type="image/webp">
-                      <img class="tabs__item-img" src="img/item-1.png" alt="">
+                      <img class="tabs__item-img" src="img/item-1.png" alt="проект ...">
                     </picture>
                   </a>
                 </div>
@@ -485,8 +542,8 @@
                   </div>
                   <!-- /.tabs__top -->
                   <div class="tabs__bottom">
-                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href=""
-                        class="tabs__code-link">ссылке</a></p>
+                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href="#"
+                        class="tabs__code-link" aria-label="перейти на Github с репозиторием проекта">ссылке</a></p>
                     <!-- /.tabs__text -->
                   </div>
                   <!-- /.tabs__bottom -->
@@ -496,10 +553,10 @@
               <!-- /.tabs__content -->
               <div class="tabs__content" id="tab_03">
                 <div class="tabs__col">
-                  <a class="tabs__item-link" href="">
+                  <a class="tabs__item-link" href="#" aria-label="перейти на сайт с проектом">
                     <picture>
                       <source srcset="img/item-1.webp" type="image/webp">
-                      <img class="tabs__item-img" src="img/item-1.png" alt="">
+                      <img class="tabs__item-img" src="img/item-1.png" alt="проект ...">
                     </picture>
                   </a>
                 </div>
@@ -530,8 +587,8 @@
                   </div>
                   <!-- /.tabs__top -->
                   <div class="tabs__bottom">
-                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href=""
-                        class="tabs__code-link">ссылке</a></p>
+                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href="#"
+                        class="tabs__code-link" aria-label="перейти на Github с репозиторием проекта">ссылке</a></p>
                     <!-- /.tabs__text -->
                   </div>
                   <!-- /.tabs__bottom -->
@@ -541,10 +598,10 @@
               <!-- /.tabs__content -->
               <div class="tabs__content" id="tab_04">
                 <div class="tabs__col">
-                  <a class="tabs__item-link" href="">
+                  <a class="tabs__item-link" href="#" aria-label="перейти на сайт с проектом">
                     <picture>
                       <source srcset="img/item-1.webp" type="image/webp">
-                      <img class="tabs__item-img" src="img/item-1.png" alt="">
+                      <img class="tabs__item-img" src="img/item-1.png" alt="проект ...">
                     </picture>
                   </a>
                 </div>
@@ -575,8 +632,8 @@
                   </div>
                   <!-- /.tabs__top -->
                   <div class="tabs__bottom">
-                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href=""
-                        class="tabs__code-link">ссылке</a></p>
+                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href="#"
+                        class="tabs__code-link" aria-label="перейти на Github с репозиторием проекта">ссылке</a></p>
                     <!-- /.tabs__text -->
                   </div>
                   <!-- /.tabs__bottom -->
@@ -586,10 +643,10 @@
               <!-- /.tabs__content -->
               <div class="tabs__content" id="tab_05">
                 <div class="tabs__col">
-                  <a class="tabs__item-link" href="">
+                  <a class="tabs__item-link" href="#" aria-label="перейти на сайт с проектом">
                     <picture>
                       <source srcset="img/item-1.webp" type="image/webp">
-                      <img class="tabs__item-img" src="img/item-1.png" alt="">
+                      <img class="tabs__item-img" src="img/item-1.png" alt="проект ...">
                     </picture>
                   </a>
                 </div>
@@ -620,8 +677,8 @@
                   </div>
                   <!-- /.tabs__top -->
                   <div class="tabs__bottom">
-                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href=""
-                        class="tabs__code-link">ссылке</a></p>
+                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href="#"
+                        class="tabs__code-link" aria-label="перейти на Github с репозиторием проекта">ссылке</a></p>
                     <!-- /.tabs__text -->
                   </div>
                   <!-- /.tabs__bottom -->
@@ -631,10 +688,10 @@
               <!-- /.tabs__content -->
               <div class="tabs__content" id="tab_06">
                 <div class="tabs__col">
-                  <a class="tabs__item-link" href="">
+                  <a class="tabs__item-link" href="#" aria-label="перейти на сайт с проектом">
                     <picture>
                       <source srcset="img/item-1.webp" type="image/webp">
-                      <img class="tabs__item-img" src="img/item-1.png" alt="">
+                      <img class="tabs__item-img" src="img/item-1.png" alt="проект ...">
                     </picture>
                   </a>
                 </div>
@@ -665,8 +722,8 @@
                   </div>
                   <!-- /.tabs__top -->
                   <div class="tabs__bottom">
-                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href=""
-                        class="tabs__code-link">ссылке</a></p>
+                    <p class="tabs__text">Пример кода можно увидеть на Github, перейдя по <a href="#"
+                        class="tabs__code-link" aria-label="перейти на Github с репозиторием проекта">ссылке</a></p>
                     <!-- /.tabs__text -->
                   </div>
                   <!-- /.tabs__bottom -->
@@ -691,12 +748,13 @@
               height="80px" fill="#44413b">
               <use xlink:href="#icon-contact"></use>
             </svg>
-            <span class="wow zoomInUp">Связь со мной:</span>
+            <span class="wow zoomInUp">Связь со мной</span>
           </h2>
           <!-- /.social__title section-title -->
           <ul class="social__list">
             <li class="social__item wow bounceInLeft" data-wow-delay="1s">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://www.facebook.com/restby/"
+                aria-label="перейти на мой профиль в facebook">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="20px" height="30px" fill="#fd9334">
                   <use xlink:href="#icon-facebook"></use>
@@ -705,7 +763,7 @@
             </li>
             <!-- /.social__item -->
             <li class="social__item wow bounceInLeft" data-wow-delay="0.8s">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://twitter.com/Restby1" aria-label="перейти на мой профиль в twitter">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="20px" height="30px" fill="#fd9334">
                   <use xlink:href="#icon-twitter"></use>
@@ -714,7 +772,8 @@
             </li>
             <!-- /.social__item -->
             <li class="social__item wow bounceInLeft" data-wow-delay="0.6s">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://www.instagram.com/anton.tolstenko/"
+                aria-label="перейти на мой профиль в instagram">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="20px" height="30px" fill="#fd9334">
                   <use xlink:href="#icon-instagram"></use>
@@ -723,7 +782,8 @@
             </li>
             <!-- /.social__item -->
             <li class="social__item wow bounceInLeft" data-wow-delay="0.4s">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://www.linkedin.com/feed/"
+                aria-label="перейти на мой профиль в linkedin">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="20px" height="30px" fill="#fd9334">
                   <use xlink:href="#icon-linkedin"></use>
@@ -732,7 +792,7 @@
             </li>
             <!-- /.social__item -->
             <li class="social__item wow bounceInLeft" data-wow-delay="0.2s">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://vk.com/id9956122" aria-label="перейти на мой профиль в vkontakte">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="20px" height="30px" fill="#fd9334">
                   <use xlink:href="#icon-vk"></use>
@@ -756,7 +816,7 @@
         <div class="main-footer__row">
           <div class="main-footer__col">
             <div class="main-footer__logo logo">
-              <a class="logo__link">
+              <a class="logo__link" aria-label="Антон Толстенко">
                 <img class="logo__img" src="img/logo.png" alt="Антон Толстенко">
               </a>
               <!-- /.logo__link -->
@@ -766,21 +826,21 @@
           <!-- /.main-footer__col -->
           <div class="main-footer__col">
             <div class="main-footer__info">
-              <a class="main-footer__link" href="skype:restby?call">
+              <a class="main-footer__link" href="skype:restby?call" aria-label="свзяться со мной по Skype">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="30px" height="50px" fill="#fd9334">
                   <use xlink:href="#icon-skype"></use>
                 </svg>
                 <span class="visually-hidden">Skype</span>
               </a>
-              <a class="main-footer__link" href="mailto:restby@gmail.com">
+              <a class="main-footer__link" href="mailto:restby@gmail.com" aria-label="написать мне на почту">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="34px" height="54px" fill="#fd9334">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
                 <span class="visually-hidden">Email</span>
               </a>
-              <a class="main-footer__link" href="tel:+375336444738">
+              <a class="main-footer__link" href="tel:+375336444738" aria-label="позвонить мне">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="28px" height="38px" fill="#fd9334">
                   <use xlink:href="#icon-phone"></use>
