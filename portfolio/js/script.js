@@ -564,8 +564,10 @@ $(document).ready(function () {
   });
   /*scroll to*/
   $('.navigation__link').click(function () {
-    $('.main-header__burger,.main-header__navigation').toggleClass('active');
-    $('body').toggleClass('lock');
+    $('.main-header__burger,.main-header,.main-header__navigation').toggleClass('active');
+    if ($('body').hasClass('lock')) {
+      $('body').removeClass('lock');
+    }
     let scroll_el = $(this).attr('href');
     let destination = $(scroll_el).offset().top;
     if ($(scroll_el).length != 0) {
@@ -577,7 +579,7 @@ $(document).ready(function () {
   $('.slider').slick({
     dots: true,
     infinite: true,
-    speed: 600,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [

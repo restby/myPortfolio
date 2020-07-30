@@ -15,6 +15,13 @@
     }
   }
 
+  &__logo {
+    @media (max-width: $md3+px) {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
   &__info {
     display: inline-flex;
     justify-content: flex-start;

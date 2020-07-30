@@ -5327,6 +5327,11 @@ body.lock {
   .tabs__item-text {
     font-size: 14px;
   }
+
+  .main-footer__logo {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 709.98px) {
