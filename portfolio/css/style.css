@@ -3980,9 +3980,12 @@ body.lock {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
   -webkit-box-shadow: 10px 10px 10px 0 rgba(68, 65, 59, 0.5);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   position: absolute;
   top: 50%;
           transform: translateY(-50%);
+  transition: all 0.5s ease 0s;
           box-shadow: 10px 10px 10px 0 rgba(68, 65, 59, 0.5);
   border: none;
   border-radius: 50%;
@@ -3995,9 +3998,12 @@ body.lock {
 .slick-arrow::after {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   position: absolute;
   top: 50%;
           transform: translateY(-50%);
+  transition: all 0.5s ease 0s;
   width: 10px;
   height: 0;
   content: "";
@@ -4094,6 +4100,9 @@ body.lock {
 
 .slick-dots li button {
   -webkit-box-shadow: 3px 3px 10px 0 rgba(68, 65, 59, 0.5);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
           box-shadow: 3px 3px 10px 0 rgba(68, 65, 59, 0.5);
   border: none;
   border-radius: 50%;
@@ -4181,6 +4190,9 @@ body.lock {
 }
 
 .navigation__link {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   color: #fd9334;
   text-decoration: none;
   text-transform: uppercase;
@@ -4192,7 +4204,7 @@ body.lock {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   outline: none;
-  color: rgba(253, 147, 52, 0.8);
+  color: #ffffff;
 }
 
 .navigation__link:active {
@@ -4388,7 +4400,10 @@ body.lock {
 
 .spoilers__title {
   -webkit-box-shadow: 10px 10px 10px 2px rgba(68, 65, 59, 0.7);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   display: inline-block;
+  transition: all 0.5s ease 0s;
   margin-bottom: 34px;
           box-shadow: 10px 10px 10px 2px rgba(68, 65, 59, 0.7);
   border: none;
@@ -4410,8 +4425,11 @@ body.lock {
 
 .spoilers__title span::before,
 .spoilers__title span::after {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   position: absolute;
   top: 14px;
+  transition: all 0.5s ease 0s;
   background-color: #fd9334;
   width: 14px;
   height: 2px;
@@ -4557,7 +4575,10 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 140px;
   -webkit-box-shadow: 10px 10px 10px 2px rgba(68, 65, 59, 0.7);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
           flex: 0 1 140px;
+  transition: all 0.5s ease 0s;
   margin-right: 4px;
   margin-left: 4px;
           box-shadow: 10px 10px 10px 2px rgba(68, 65, 59, 0.7);
@@ -4737,6 +4758,9 @@ body.lock {
 }
 
 .tabs__code-link {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   color: #292723;
   text-decoration: underline;
 }
@@ -4841,11 +4865,14 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
   -webkit-box-shadow: 10px 10px 10px 0 rgba(68, 65, 59, 0.6);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
           align-items: center;
           justify-content: center;
+  transition: all 0.5s ease 0s;
           box-shadow: 10px 10px 10px 0 rgba(68, 65, 59, 0.6);
   border-radius: 50%;
   background-color: #44413b;
@@ -4854,16 +4881,19 @@ body.lock {
 }
 
 .social__link svg {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   width: 20px;
   height: 30px;
 }
 
 .social__link:hover,
 .social__link:focus {
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   -webkit-box-shadow: 8px 8px 8px 0 rgba(68, 65, 59, 0.9);
-  transition: all 0.4s ease 0s;
+  transition: all 0.5s ease 0s;
           box-shadow: 8px 8px 8px 0 rgba(68, 65, 59, 0.9);
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -4878,17 +4908,17 @@ body.lock {
 
 .social__link:hover svg,
 .social__link:focus svg {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   fill: #44413b;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .social__link:active svg {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   fill: #fd9334;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .main-footer {
@@ -4930,6 +4960,12 @@ body.lock {
           justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.main-footer__link svg {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .main-footer__link:first-child {

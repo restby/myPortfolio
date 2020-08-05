@@ -38,6 +38,10 @@
     align-self: center;
     justify-content: center;
 
+    & svg {
+      transition: all 0.5s ease 0s;
+    }
+
     &:first-child {
       margin-left: 0;
     }
